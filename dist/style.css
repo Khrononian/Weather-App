@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#093028, #237A57);
+    color: white;
+}
+
+nav {
+    text-align: center;
+    padding: 1.5rem;
+    background: #48484a;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.search-contain {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    padding: .7rem;
+    border-color: transparent;
+}
+
+.search-input {
+    width: 500px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.search-btn {
+    cursor: pointer;
+    background: #eb6f4c;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: .6s background;
+    color: white;
+}
+
+.search-btn:hover {
+    background: hsl(13, 72%, 45%)
+}
+
+.location-info {
+    background: red;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.location-name {
+    font-size: 1.7rem;
+}
+
+.location-weather {
+    font-size: 1.5rem;
+}
+
+.location-temp {
+    font-size: 6rem;
+}
+
+.high-low {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    margin: 0 auto; 
+}
+
+.highs-lows {
+    font-size: 1.3rem;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: space-around;
+}
+
+.day {
+
+    width: 120px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.day-temp {
+    font-size: 1.6rem;
+}
+
+.imgs {
+    width: 80px;
+}
