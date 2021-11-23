@@ -5,8 +5,7 @@
 }
 
 body {
-    background: linear-gradient(#093028, #237A57);
-    color: white;
+    color: black;
 }
 
 nav {
@@ -46,18 +45,45 @@ nav {
     background: hsl(13, 72%, 45%)
 }
 
+.temp-contain {
+    margin-left: 5rem;
+}
+
+.change-temp {
+    padding: .6rem;
+    background: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.fare, .cels {
+    cursor: pointer;
+}
+
+.fare {
+    opacity: .5;
+    pointer-events: none;
+}
+
 .location-info {
-    background: red;
-    width: 300px;
+
+    width: 500px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .location-name {
     font-size: 1.7rem;
 }
 
+.location-image {
+    width: 150px;
+}
+ 
 .location-weather {
     font-size: 1.5rem;
 }
@@ -69,7 +95,7 @@ nav {
 .high-low {
     display: flex;
     justify-content: space-between;
-    width: 130px;
+    width: 180px;
     margin: 0 auto; 
 }
 
@@ -81,6 +107,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(7, auto);
     justify-content: space-around;
+    margin-top: 5rem;
 }
 
 .day {
@@ -90,13 +117,17 @@ nav {
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
-.day-temp {
-    font-size: 1.6rem;
+.temp {
+    font-size: 1.5rem;
+}
+
+.weather {
+    font-size: 1.2rem;
 }
 
 .imgs {
-    width: 80px;
+    width: 120px;
 }
