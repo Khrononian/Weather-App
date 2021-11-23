@@ -11,55 +11,29 @@
             <div class="search-contain">
                 <input class="search search-input" type="search" placeholder="Search City">
                 <button class="search search-btn">Search</button> 
+                <div class="temp-contain">
+                    <button class="change-temp fare">F</button>
+                    |
+                    <button class="change-temp cels">C</button>
+                </div>
             </div>
         </nav>
         <div class="location-info">
-            <h3 class="location-name">London</h3>
-            <p class="location-weather"></p>
-            <p class="location-temp">80°</p>
-            <div class="high-low">
-                <p class="location-high highs-lows">H:</p>
-                <p class="location-low highs-lows">L:</p>
+            <div class="left-side">
+                <h3 class="location-name">London</h3>
+                <img class="location-image" src="">
+                <p class="location-weather"></p>
             </div>
-            
-        </div>
-        <div class="days">
-            <div class="day">
-
-                <img class="imgs" src="https://openweathermap.org/img/wn/01d@2x.png">
-                <p class="day-temp-high">80°</p>
-            </div>
-            <div class="day">
-
-                <img class="imgs" src="https://openweathermap.org/img/wn/01d@2x.png">
-                <p class="day-temp-high">80°</p>
-            </div>
-            <div class="day">
-
-                <img class="imgs" src="https://openweathermap.org/img/wn/01d@2x.png">
-                <p class="day-temp">80°</p>
-            </div>
-            <div class="day">
-
-                <img class="imgs" src="https://openweathermap.org/img/wn/01d@2x.png">
-                <p class="day-temp">80°</p>
-            </div>
-            <div class="day">
-
-                <img class="imgs" src="https://openweathermap.org/img/wn/01d@2x.png">
-                <p class="day-temp">80°</p>
-            </div>
-            <div class="day">
-
-                <img class="imgs" src="https://openweathermap.org/img/wn/01d@2x.png">
-                <p class="day-temp">80°</p>
-            </div>
-            <div class="day">
-
-                <img class="imgs" src="https://openweathermap.org/img/wn/01d@2x.png">
-                <p class="day-temp">80°</p>
+            <div class="right-side">
+                <p class="location-temp temps">80°</p>
+                <div class="high-low">
+                    <p class="location-high highs-lows temps" data-high="high"></p>
+                    /
+                    <p class="location-low highs-lows temps" data-low="low"></p>
+                </div>
             </div>
         </div>
+        <div class="days"></div>
     </body>
     <script src="main.js"></script>
 </html>
