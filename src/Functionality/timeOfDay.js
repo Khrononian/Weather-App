@@ -19,7 +19,6 @@ function changeColorOnTime() {
         document.body.style.backgroundImage = 'linear-gradient(315deg, #000000 0%, #414141 74%)'
         document.body.style.color = 'white'
     }
-    console.log(hours)
 }
 
 export default changeColorOnTime
