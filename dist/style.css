@@ -6,13 +6,14 @@
 
 body {
     color: black;
+    font-size: 1rem;
 }
 
 nav {
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.2em;
     background: #48484a;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 3rem;
 }
 
@@ -22,12 +23,12 @@ nav {
 }
 
 .search {
-    padding: .7rem;
+    padding: .7em;
     border-color: transparent;
+    max-width: 80%;
 }
 
 .search-input {
-    width: 500px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
@@ -43,10 +44,6 @@ nav {
 
 .search-btn:hover {
     background: hsl(13, 72%, 45%)
-}
-
-.temp-contain {
-    margin-left: 5rem;
 }
 
 .change-temp {
@@ -67,11 +64,10 @@ nav {
 }
 
 .location-info {
-
-    width: 500px;
+    max-width: 40%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 4em;
     display: flex;
     justify-content: space-between;
 }
@@ -95,7 +91,7 @@ nav {
 .high-low {
     display: flex;
     justify-content: space-between;
-    width: 180px;
+    max-width: 80%;
     margin: 0 auto; 
 }
 
@@ -107,11 +103,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(7, auto);
     justify-content: space-around;
-    margin-top: 5rem;
+    margin-top: 5em;
 }
 
 .day {
-
     width: 120px;
     text-align: center;
 }
@@ -130,4 +125,134 @@ h5 {
 
 .imgs {
     width: 120px;
+}
+
+@media screen and (min-width: 320px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .temp-contain {
+        margin: 1em 0 0 0;
+    }
+
+    .location-info {
+        flex-direction: column;
+    }
+
+    .location-temp {
+        font-size: 3.8rem;
+    }
+
+    .high-low {
+        justify-content: center;
+        max-width: 40%;
+    }
+
+    .days {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+        width: 70%;
+        margin: 5em auto 0;
+        text-align: center;
+    }
+
+    .day {
+        text-align: center;
+        margin: 1.3em auto;
+    }
+
+    .imgs {
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .temp-contain {
+        margin: 0 0 0 5em;
+    }
+
+    .location-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .location-temp {
+        font-size: 6rem;
+    }
+
+    .high-low {
+        justify-content: center;
+    }
+
+    .days {
+        grid-template-columns: repeat(7, 20%);
+        grid-gap: 3px;
+    }
+
+    .day > * {
+        text-align: center;
+    }
+
+    h5 {
+        font-size: .8rem;
+    }
+
+    .weather {
+        font-size: .9rem;
+    }
+
+    .temp {
+        font-size: 1.1rem;
+    }
+    
+    .day {
+        width: 4em;
+    }
+}
+
+@media screen and (min-width: 905px) {
+    body {
+        min-height: 100%;
+    }
+
+    .location-info {
+        justify-content: space-between;
+    }
+
+    .temp {
+        font-size: 1.6rem;
+    }
+
+    .weather {
+        font-size: 1.2rem;
+    }
+
+    .high-low {
+        justify-content: space-between;
+        max-width: 100%
+    }
+
+    h5 {
+        font-size: 1.3rem;
+    }
+
+    .days {
+        grid-gap: 0px;
+    }
+
+    .day {
+        width: 50%;
+    }
+
+    .imgs {
+        width: 100px;
+    }
 }
