@@ -10,7 +10,7 @@ function changeColorOnTime() {
         document.body.style.backgroundColor = '#7ee8fa';
         document.body.style.backgroundImage = 'linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%)'
         document.body.style.color = 'black'
-    } else if (hours >= 17 && hours <= 21) {
+    } else if (hours >= 16 || hours <= 21) {
         document.body.style.backgroundColor = '#0cbaba';
         document.body.style.backgroundImage = 'linear-gradient(315deg, #0cbaba 0%, #380036 74%)'
         document.body.style.color = 'white'
