@@ -1,5 +1,6 @@
 const fahrenheit = document.querySelector('.fare')
 const celsius = document.querySelector('.cels');
+const tempChange = document.querySelector('.temp-contain')
 
 function postWeatherForecastData(weatherData, dayFinder) {
     const forecast =
@@ -40,6 +41,7 @@ fahrenheit.addEventListener('click', () => { // CHANGE TO FAHRENHEIT
         celsius.style.opacity = 1;
         fahrenheit.style.pointerEvents = 'none';
         celsius.style.pointerEvents = 'auto'
+        tempChange.dataset.temp = 'fare'
     })
 })
 
@@ -74,6 +76,7 @@ celsius.addEventListener('click', () => { // CHANGE TO CELSIUS
         celsius.style.opacity = .5;
         celsius.style.pointerEvents = 'none'
         fahrenheit.style.pointerEvents = 'auto'
+        tempChange.dataset.temp = 'cels'
     })
 })
 
