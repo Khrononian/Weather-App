@@ -1,6 +1,6 @@
-const fahrenheit = document.querySelector('.fare')
+const fahrenheit = document.querySelector('.fare');
 const celsius = document.querySelector('.cels');
-const tempChange = document.querySelector('.temp-contain')
+const tempChange = document.querySelector('.temp-contain');
 
 function postWeatherForecastData(weatherData, dayFinder) {
     const forecast =
@@ -11,16 +11,16 @@ function postWeatherForecastData(weatherData, dayFinder) {
         <p class="weather">${weatherData.weather[0].main}</p>
         </div>`
 
-    return forecast
+    return forecast;
 }
 
 fahrenheit.addEventListener('click', () => { // CHANGE TO FAHRENHEIT
     const temperatures = document.querySelectorAll('.temps');
     
     temperatures.forEach(temps => {
-        let temperature = temps.innerText.match(/\d/g)
-        let highLows
-        let fahrenheitTemp
+        let temperature = temps.innerText.match(/^[+-]?\d+/g);
+        let highLows;
+        let fahrenheitTemp;
 
         temperature = temperature.join('')
         if (temps.dataset.high == 'high' || temps.dataset.low == 'low') {
@@ -49,7 +49,7 @@ celsius.addEventListener('click', () => { // CHANGE TO CELSIUS
     const temperatures = document.querySelectorAll('.temps');
 
     temperatures.forEach(temps => {
-        let temperature = temps.innerText.match(/\d/g)
+        let temperature = temps.innerText.match(/^[+-]?\d+/g)
         let celciusTemp
         let highLows
 
